@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Oswald&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Macondo', sans-serif;
+	overflow-x: hidden;
+}
+.grid__index{
+	display: grid;
+	grid-template-areas: 
+		"inicio" 
+		"menu"	
+		"content"
+		"footer"
+		;
+	grid-template-rows:100vh 90px auto 5vh ;
+}
+.grid__rdj{
+	min-height: 100vh;
+	display: grid;
+	grid-template-areas:  
+		"menu"	
+		"content"
+		"footer"
+		;
+	grid-template-rows: 90px auto 5vh ;
+}
+.gird__mpj{
+	min-height: 100vh;
+	display: grid;
+	grid-template-areas:  
+		"menu"	
+		"content"
+		"footer"
+		;
+	grid-template-rows: 90px auto 5vh ;
+}
+.grid__cont{
+	min-height: 100vh;
+	display: grid;
+	grid-template-areas:  
+		"menu"	
+		"content"
+		"footer"
+		;
+	grid-template-rows: 90px auto 5vh ;
+}
+
+.grid__prod{
+	min-height: 100vh;
+	display: grid;
+	grid-template-areas:  
+		"menu"	
+		"content"
+		"footer"
+		;
+	grid-template-rows: 90px auto 5vh ;
+}
+
+.inicio{
+ 	grid-area:inicio;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items:center;
+	background-image:url("../img/HojadePersonaje.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.logo{
+	width: 200px;
+	height: 200px;
+	
+}
+#Menu{
+	grid-area:menu;	
+	display: flex;
+	align-items: center;
+	background: #000;
+	position: sticky;
+ 	top: 0;
+
+}
+
+#Menu ul {
+ 	width: 60%;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	margin-left: 2%;
+}
+.logo__menu{
+	width: 90px;
+	height: 90px;
+	margin-left: 10px;
+}
+
+/*#Menu li, .rdj__juegos li, .pj__crea li{
+
+	display: inline;
+
+}*/
+
+#Menu a, .rdj__juegos a, .pj__crea a {
+
+	font-family: 'Macondo', sans-serif;
+	color: white;
+	text-decoration: none;
+}
+#content {
+	grid-area:content;
+	display: flex;
+	padding-top: 50px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: darkred;
+}
+
+.intro{
+	text-align: center;
+	width: 60%;
+}
+.intro__titulo{
+	font-size: 2rem;
+}
+.referencias{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+
+}
+.referecia{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.referecia__titulo{
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+
+}
+.referencias__titulo {
+	width: 100%;
+	font-size: 2rem;
+	margin: 50px 0 ;
+	margin-left: 40px;
+	text-decoration: underline;
+}
+
+.rdj__juegos , .pj__crea{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+ 	text-align: center;
+ 	background: #000;
+ 	font-family: 'Oswald', sans-serif;
+	color: white;
+	text-decoration: none; 	
+	width: 80%;
+	height: 2rem;
+	list-style: none;
+}
+	
+.game{
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	margin: 30px 0;	
+	min-height: 300px;
+
+}
+.game__title{
+	font-size: 1.5rem;
+	text-decoration: underline;
+	margin-left: 40px;
+}
+
+.hoja__de__pj {
+	width: 50vw;
+	height: 70vw;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+}
+.Footer{
+	grid-area:footer;
+	display: flex;
+	font-family: 'Oswald', sans-serif;	
+	background: #000;
+	color: white;
+}
+.Footer__Redes{
+	width: 100px;
+	height: 100px;
+	
+}
+.cont__title{
+	font-size: 2rem;
+	
+}
+.form{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.form input{
+	margin:10px	;
+	align-self: start;
+}
+.send{
+	width: 20%;
+	align-self: end !important;
+}
+
+@media all and (max-width: 768px){
+	.referencias{
+		flex-direction: column;
+	}
+	.referencias__titulo{
+		text-align: center;
+	}
+	#Menu a{
+		font-size: .5rem;
+	}
+	#Menu ul{
+		margin-left: 8%;
+	}
+	#Menu li{
+		margin: 0;
+	}
+	.pj__crea{
+		font-size: .5rem;
+		width: 80%;
+		height: 1rem;
+	}
+	.pj__crea li{
+		margin: 0;
+	}
+	.logo{
+		width: 100px;
+		height: 100px;
+	}
+	.referencias__titulo{
+		font-size: 2rem;
+		margin-left: 5px;
+	}
+	.referecia__titulo{
+		font-size: 1.5rem;
+	}
+
+	.rdj__juegos{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		background-color: unset;
+		margin-bottom: 60px;
+		height: 10%;
+
+	}
+	.rdj__juegos li{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 40%;
+		
+		margin: 5% 5%;
+		background-color: black;	
+	}
+
+	.rdj__juegos a{
+		align-items: center;
+		color: white;
+	}
+}
