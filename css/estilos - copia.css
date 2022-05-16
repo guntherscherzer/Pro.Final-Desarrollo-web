@@ -60,11 +60,15 @@ body{
 }
 
 .inicio{
- 	background-image:url("../img/HojadePersonaje.png");
+ 	grid-area:inicio;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items:center;
+	background-image:url("../img/HojadePersonaje.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 100vh;
 }
 
 .logo{
@@ -72,7 +76,10 @@ body{
 	height: 200px;
 	
 }
-.menu{
+#Menu{
+	grid-area:menu;	
+	display: flex;
+	align-items: center;
 	background: #000;
 	position: sticky;
  	top: 0;
