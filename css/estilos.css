@@ -60,7 +60,7 @@ body{
 }
 
 .inicio{
- 	background-image:url("../img/HojadePersonaje.png");
+ 	background-image:url("../img/GifDados.gif");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -72,12 +72,12 @@ body{
 	height: 200px;
 	
 }
-.menu{
+/*.menu{
 	background: #000;
 	position: sticky;
  	top: 0;
 
-}
+}*/
 
 #Menu ul {
  	width: 60%;
@@ -103,47 +103,55 @@ body{
 	color: white;
 	text-decoration: none;
 }
-#content {
-	grid-area:content;
-	display: flex;
-	padding-top: 50px;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.contenido{
 	background: darkred;
+	border-color: black ;
+	border-width: 10;
+
+}
+.contenido button{
+	border-color: black !important;
+}
+#content  {
+	/*display: flex;*/
+	/*padding-top: 50px;*/
+	/*flex-direction: column;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	/*background: darkred;*/
 }
 
 .intro{
-	text-align: center;
-	width: 60%;
-}
+	/*text-align: center;*/
+	/*width: 60%;
+*/}
 .intro__titulo{
-	font-size: 2rem;
+	/*font-size: 2rem;*/
 }
 .referencias{
-	width: 100%;
-	display: flex;
-	justify-content: space-evenly;
+	/*width: 100%;*/
+	/*display: flex;
+	justify-content: space-evenly;*/
 
 }
-.referecia{
+.referencia{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 30px;
 }
-.referecia__titulo{
+.referencia__titulo{
 	font-size: 1.5rem;
 	margin-bottom: 20px;
 
 }
 .referencias__titulo {
-	width: 100%;
-	font-size: 2rem;
-	margin: 50px 0 ;
-	margin-left: 40px;
-	text-decoration: underline;
+	/*width: 100%;*/
+	/*font-size: 2rem;*/
+	/*margin: 50px 0 ;
+	margin-left: 40px;*/
+	/*text-decoration: underline;*/
 }
 
 .rdj__juegos , .pj__crea{
@@ -181,20 +189,21 @@ body{
 	margin-bottom: 30px;
 
 }
-.Footer{
+./*Footer{
 	grid-area:footer;
 	display: flex;
 	font-family: 'Oswald', sans-serif;	
 	background: #000;
 	color: white;
-}
-.Footer__Redes{
+}*/
+/*.Footer__Redes{
 	width: 100px;
-	height: 100px;
+	height: 100px;*/
 	
 }
 .cont__title{
 	font-size: 2rem;
+	color: black;
 	
 }
 .form{
@@ -215,6 +224,9 @@ body{
 @media all and (max-width: 768px){
 	.referencias{
 		flex-direction: column;
+	}
+	.referencia iframe {
+		height: 50%;
 	}
 	.referencias__titulo{
 		text-align: center;
@@ -244,7 +256,7 @@ body{
 		font-size: 2rem;
 		margin-left: 5px;
 	}
-	.referecia__titulo{
+	.referencia__titulo{
 		font-size: 1.5rem;
 	}
 
