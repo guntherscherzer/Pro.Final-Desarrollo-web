@@ -7,8 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<title>InfoRol</title>
 </head>
-<body class="grid__cont" >
-	
+<body class="conteiner-fluid" >
+
 	<div class="row menu">
 		<nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
 		  <div class="container-fluid">
@@ -48,15 +48,15 @@
 		  </div>
 		</nav>
 	</div>
-	<div class="d-flex flex-column justify-content-center align-items-center contenido">	
-		<div class="cont__title">
+	<div class="d-flex flex-column justify-content-center align-items-center contenido contacto__cont">	
+		<div class="fs-2 text-black text-decoration-underline">
 			Consultas
 		</div>
-		<form class="form" action="contacto.html" method="POST">
-			<input type="text" name="nombre_apellido" placeholder="Nombre y Apellido">
-			<input type="email" name="email" placeholder="Email">
+		<form class="d-flex flex-column justify-content-between align-items-center" action="contacto.html" method="POST">
+			<input class=" m-3 align-self-start" type="text" name="nombre_apellido" placeholder="Nombre y Apellido">
+			<input class=" m-3 align-self-start" type="email" name="email" placeholder="Email">
 			<textarea rows="4" cols="50" name="consulta"></textarea>
-			<input class="send" type="submit" value="Enviar">
+			<input class=" m-3 align-self-end send"  type="submit" value="Enviar">
 		</form>
 	</div>
 	<div class="row d-flex bg-dark text-white ps-5 mifooter ">

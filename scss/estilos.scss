@@ -1,0 +1,64 @@
+@import "fuentes";
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Macondo', sans-serif;
+	overflow-x: hidden;
+}
+/*estilos pagina inicio */
+
+.inicio{
+ 	background-image:url("../img/GifDados.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+.contenido{
+	background: darkred;
+	border-color: black ;
+	border-width: 10;
+
+}
+.nav-tabs{
+	button{
+		border-color: black !important;
+	}
+}
+.referencias{
+	@media all and (max-width: 768px){
+		flex-direction: column;
+	}
+	iframe{
+		@media all and (max-width: 768px){
+			height: 50%;
+		}
+	}
+}
+.referencia__titulo{
+	font-size: 1.5rem;
+	@media all and (max-width: 768px){
+		text-align: center;
+		margin-left: 5px;
+		font-size: 2rem;
+
+	}
+}
+	
+.game__title{
+	font-size: 1.5rem;
+	text-decoration: underline;
+	margin-left: 40px;
+}
+
+.hoja__de__pj {
+	width: 50vw;
+	height: 70vw;
+}
+
+
+.send{
+	width: 20%;
+}
