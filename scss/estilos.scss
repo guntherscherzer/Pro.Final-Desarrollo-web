@@ -1,4 +1,18 @@
 @import "fuentes";
+@import "variables";
+@mixin positionimput ($top:auto,$bottom:auto,$left:auto,$right:auto,$width:auto,$height:auto) {
+	position: absolute;
+	top: $top;
+	bottom:	$bottom;
+    left: $left;
+    right: $right;
+   	width: $width;
+   	height: $height;
+   	background: none;
+	border: none;
+}
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -54,10 +68,19 @@ body{
 }
 
 .hoja__de__pj {
-	width: 50vw;
 	height: 70vw;
+	position: relative;
+	img{
+		height: 100%;
+	}
+	@each $input,$param in $inputshpj{
+		##{$input}{
+			@include positionimput(map-get($param,top),map-get($param,bottom),map-get($param,left),map-get($param,right),map-get($param,width),map-get($param,height));
+		}
+		
+	}
+	
 }
-
 
 .send{
 	width: 20%;

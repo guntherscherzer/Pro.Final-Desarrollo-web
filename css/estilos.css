@@ -59,8 +59,36 @@ body {
 }
 
 .hoja__de__pj {
-  width: 50vw;
   height: 70vw;
+  position: relative;
+}
+
+.hoja__de__pj img {
+  height: 100%;
+}
+
+.hoja__de__pj #NombreDePersonaje {
+  position: absolute;
+  top: 6.6%;
+  bottom: auto;
+  left: 7%;
+  right: auto;
+  width: 39%;
+  height: auto;
+  background: none;
+  border: none;
+}
+
+.hoja__de__pj #Clase {
+  position: absolute;
+  top: 4.9%;
+  bottom: auto;
+  left: 47%;
+  right: auto;
+  width: 13%;
+  height: 2.7%;
+  background: none;
+  border: none;
 }
 
 .send {
