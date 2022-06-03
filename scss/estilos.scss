@@ -24,12 +24,23 @@ body{
 /*estilos pagina inicio */
 
 .inicio{
- 	background-image:url("../img/GifDados.gif");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+ 
 	height: 100vh;
+	z-index: -5;
+	.titulo__intro{
+		z-index: 5;
+		@media all and (max-width: 768px){
+		font-size: 1rem;
+		}	
+	}
+	
+	.logo{
+		z-index: 5;
+	}
+
+
 }
+
 .contenido{
 	background: darkred;
 	border-color: black ;
@@ -41,6 +52,8 @@ body{
 		border-color: black !important;
 	}
 }
+
+
 .referencias{
 	@media all and (max-width: 768px){
 		flex-direction: column;
@@ -57,7 +70,6 @@ body{
 		text-align: center;
 		margin-left: 5px;
 		font-size: 2rem;
-
 	}
 }
 	

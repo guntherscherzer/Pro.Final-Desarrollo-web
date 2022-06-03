@@ -3,16 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Crea tus propios personajes y haz su hoja de personaje" >
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<title>InfoRol</title>
+	<title>InfoRol - Libreta/Creación* de Personajes</title>
 </head>
 <body class="conteiner-fluid">
 	<div class="row menu">
 		<nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
 		  <div class="container-fluid">
-		    <a class="navbar-brand col-1" href="#">
-		    	<img class="w-75" src="img/DmScreen.png">
+		    <a class="navbar-brand col-1" href="index.html">
+		    	<img  width="5333" height="4804" class="w-100 h-auto" src="img/DmScreenLogo.png">
 		    </a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 		      <span class="navbar-toggler-icon"></span>
@@ -20,7 +21,7 @@
 		    <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 		      <div class="offcanvas-header bg-dark">
 		        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-					<img class="w-75" src="img/DmScreen.png">
+					<img width="5333" height="4804" class="w-100 h-auto" src="img/DmScreenLogo.png">
 		        </h5>
 		        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		      </div>
@@ -47,7 +48,7 @@
 		  </div>
 		</nav>
 	</div>
-	<div class="row d-flex contenido ">
+	<main class="row d-flex contenido ">
 		<nav>
 		 <div class="mt-5 nav nav-tabs container-fluid justify-content-center contenido" id="nav-tab " role="tablist">
 		    <button class="me-3 nav-link active text-black " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Mis Personajes</button>
@@ -56,66 +57,225 @@
 		  </div>
 		</nav>
 		<div class="tab-content text-black " id="nav-tabContent">
-		  <div class="tab-pane fade show active " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-		  	<div class="text-center m-5 game__title ">
-			 	Mis Personajes
-			 </div>
-			 <div class="col-10 col-md-6 offset-1 offset-md-3  text-center game__rule">
-			 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			 	<img class="my-5 ms-5 hoja__de__pj" src="img/pjpage.png">
-			 </div>
-		  </div>
-		  <div class="tab-pane fade text-black" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-		  	 <div class="text-center m-5 game__title">
-			 	Creador de personaje
-			 </div>
-			 <div class="col-10 col-md-6 offset-1 offset-md-3  text-center game__rule">
-			 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			 	<div class="my-5 hoja__de__pj">
-			 		<img src="img/pjpage.png">
-			 		<input type="text" class="form-control bg-transparent text-black border border-white " id="NombreDePersonaje">
-				 	<select class="form-select" aria-label="Default select example" id="Clase">
-						<option selected></option>
-						<option value="1">Picaro</option>
-						<option value="2">Paladin</option>
-						<option value="3">Monje</option>
-						<option value="4">Barbaro</option>
-						<option value="5">Brujo</option>
-						<option value="3">Mago</option>	
-					</select>
+			<article class="tab-pane fade show active " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+			  	<h1 class="text-center m-5 game__title ">
+				 	Mis Personajes
+				</h1>
+				<div class="col-10 col-md-6 offset-1 offset-md-3  text-center game__rule">
+				 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				 	<img class="my-5 ms-5 hoja__de__pj" src="img/pjpage.png">
+				</div>
+			</article>
+			<article class="tab-pane fade text-black" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+			  	<h1 class="text-center m-5 game__title">
+				 	Creador de personaje
+				</h1>
+				<div class="col-10 col-md-6 offset-1 offset-md-3  text-center game__rule">
+				 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				 	<form class="my-5 hoja__de__pj" action="" method="POST">
+				 		<img src="img/pjpage.png">
 
-			 	</div>
-			 </div>
-		  </div>
-		  <div class="tab-pane fade text-black" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-		  	<div class="text-center m-5 game__title">
-			 	Personaje aleatori
-			 </div>
-			 <div class="col-10 col-md-6 offset-1 offset-md-3  text-center game__rule">
-			 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			 	<img class="my-5 ms-5 hoja__de__pj" src="img/pjpage.png">
-			 </div>
-		  </div>
+				 		<!-- inputs --> 
+
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="NombreDePersonaje">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="NombreDeJugador">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Experiencia">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="FuerzaPuntaje">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="FuerzaModificador">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="DestrezaPuntaje">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="DestrezaModificador">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="ConstPuntaje">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="ConstModificador">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="IntelPuntaje">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="IntelModificador">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="SabiduriaPuntaje">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="SabiduriaModificador">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="CarismaPuntaje">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="CarismaModificador">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="SabiduriaPasiva">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="BonifDeCompetencia">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="FuerzaSalvacion">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="DestrezaSalvacion">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="ConstSalvacion">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="IntelSalvacion">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="SabiduriaSalvacion">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="CarismaSalvacion">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Acrobacias">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Arcano">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Atletismo">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Engaño">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Historia">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Interpretacion">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Intimidacion">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Investigacion">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="JuegoDeManos">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Medicina">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Naturaleza">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Persepcion">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Perspicacia">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Persuacion">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Religion">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Sigilo">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Supervivencia">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="TratoConAnimales">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="ClaseDeArmadura">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Iniciativa">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="Velocidad">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="PuntGolpeMaximo">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="PuntGolpeActual">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="TotalDadoDeGolpe">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="DadoDeGolpeActual">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="NombreAtaque1">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="NombreAtaque2">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="NombreAtaque3">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="BonifDeAtaque1">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="BonifDeAtaque2">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="BonifDeAtaque3">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="TipoDaño1">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="TipoDaño2">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="TipoDaño3">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="MonedaCobre">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="MonedaPlata">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="MonedaElectro">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="MonedaOro">
+				 		<input type="text" class="form-control bg-transparent text-black border border-white " id="MonedaPlatino">
+
+
+				 		<!-- CheckBox -->
+
+				 		<input class="form-check-input" type="checkbox" id="CheckInspiracion">
+				 		<input class="form-check-input" type="checkbox" id="CheckFuerza">
+				 		<input class="form-check-input" type="checkbox" id="CheckDestreza">
+				 		<input class="form-check-input" type="checkbox" id="CheckConst">
+				 		<input class="form-check-input" type="checkbox" id="CheckIntel">
+				 		<input class="form-check-input" type="checkbox" id="CheckSabiduria">
+				 		<input class="form-check-input" type="checkbox" id="CheckCarisma">
+				 		<input class="form-check-input" type="checkbox" id="CheckAcrobacia">
+				 		<input class="form-check-input" type="checkbox" id="CheckArcano">
+				 		<input class="form-check-input" type="checkbox" id="CheckAtletismo">
+				 		<input class="form-check-input" type="checkbox" id="CheckEngaño">
+				 		<input class="form-check-input" type="checkbox" id="CheckHistoria">
+				 		<input class="form-check-input" type="checkbox" id="CheckInterpretacion">
+				 		<input class="form-check-input" type="checkbox" id="CheckIntimidacion">
+				 		<input class="form-check-input" type="checkbox" id="Checkinvestigacion">
+				 		<input class="form-check-input" type="checkbox" id="CheckJuegoDeMano">
+				 		<input class="form-check-input" type="checkbox" id="CheckMedicina">
+				 		<input class="form-check-input" type="checkbox" id="CheckNaturaleza">
+				 		<input class="form-check-input" type="checkbox" id="CheckPercepcion">
+				 		<input class="form-check-input" type="checkbox" id="CheckPerspicacia">
+				 		<input class="form-check-input" type="checkbox" id="CheckPersuacion">
+				 		<input class="form-check-input" type="checkbox" id="CheckReligion">
+				 		<input class="form-check-input" type="checkbox" id="CheckSigilo">
+				 		<input class="form-check-input" type="checkbox" id="CheckSupervivencia">
+				 		<input class="form-check-input" type="checkbox" id="CheckTratoConAnimales">
+				 		<input class="form-check-input" type="checkbox" id="Exitos1">
+				 		<input class="form-check-input" type="checkbox" id="Exitos2">
+				 		<input class="form-check-input" type="checkbox" id="Exitos3">
+				 		<input class="form-check-input" type="checkbox" id="Fallos1">
+				 		<input class="form-check-input" type="checkbox" id="Fallos2">
+				 		<input class="form-check-input" type="checkbox" id="Fallos3">
+
+
+				 		<!-- selects -->
+
+					 	<select class="form-select" aria-label="Default select example" id="Clase">
+							<option selected></option>
+							<option value="Picaro">Picaro</option>
+							<option value="Paladin">Paladin</option>
+							<option value="Monje">Monje</option>
+							<option value="Barbaro">Barbaro</option>
+							<option value="Brujo">Brujo</option>
+							<option value="Mago">Mago</option>	
+						</select>
+						<select class="form-select" aria-label="Default select example" id="Trafondo">
+							<option selected></option>
+							<option value="Acolito">Acolito</option>
+							<option value="Soldado">Soldado</option>
+							<option value="Hermitaño">Hermitaño</option>
+							<option value="Heroe del pueblo">Heroe del pueblo</option>
+							<option value="Animador">Animador</option>
+							<option value="Artesano">Artesano Gremial</option>
+							<option value="Charlatan">Charlatan</option>
+							<option value="Criminal">Criminal</option>
+							<option value="Erudito">Erudito</option>
+							<option value="Huerfano">Huerfano</option>
+							<option value="Marinero">Marinero</option>
+							<option value="Noble">Noble</option>
+							<option value="Salvaje">Salvaje</option>
+						</select>
+						<select class="form-select" aria-label="Default select example" id="Alineamientos">
+							<option selected></option>
+							<option value="LB">Legal Bueno</option>
+							<option value="LN">Legal Neutral</option>
+							<option value="LM">Legal Malo</option>
+							<option value="NB">Neutral Bueno</option>
+							<option value="NA">Neutral Absoluto</option>
+							<option value="NM">Neutral Malvado</option>	
+							<option value="CB">Caotico Bueno</option>
+							<option value="CN">Caotico Neutral</option>
+							<option value="CM">Caotico Malvado</option>
+						</select>
+
+						<select class="form-select" aria-label="Default select example" id="Razas">
+							<option selected></option>
+							<option value="Enano">Enano</option>
+							<option value="Elfo">Elfo</option>
+							<option value="Mediano">Mediano</option>
+							<option value="Humano">Humano</option>
+							<option value="Draconido">Draconido</option>
+							<option value="Gnomo">Gnomo</option>
+							<option value="Semielfo">Semielfo</option>
+							<option value="Semiorco">Semiorco</option>
+							<option value="Tiefling">Tiefling</option>
+						</select>
+
+
+						<!-- Text Area -->
+
+						<textarea class="form-control" id="RasgosDePersonalidad"></textarea>
+						<textarea class="form-control" id="Ideales"></textarea>
+						<textarea class="form-control" id="Vinculos"></textarea>
+						<textarea class="form-control" id="Defectos"></textarea>
+						<textarea class="form-control" id="
+						AtaquesYConjuros"></textarea>
+						<textarea class="form-control" id="Equipo"></textarea>
+						<textarea class="form-control" id="CompetenciasEIdiomas"></textarea>
+						<textarea class="form-control" id="RasgosyAtributos"></textarea>
+
+
+
+				 	</form>
+				</div>
+			</article>
+			<article class="tab-pane fade text-black" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+			  	<h1 class="text-center m-5 game__title">
+				 	Personaje aleatori
+				</h1>
+				<div class="col-10 col-md-6 offset-1 offset-md-3  text-center game__rule">
+				 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				 	<img class="my-5 ms-5 hoja__de__pj" src="img/pjpage.png">
+				</div>
+			</article>
 		</div>
-	</div> 
-	<div class="row  d-flex bg-dark text-white ps-5 mifooter ">
+	</main> 
+	<section class="row  d-flex bg-dark text-white ps-5 mifooter ">
 		Simbols redes 
-	</div> 
+	</section> 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>	
 </html>
