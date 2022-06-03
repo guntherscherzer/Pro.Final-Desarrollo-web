@@ -21,6 +21,18 @@ body{
 	font-family: 'Macondo', sans-serif;
 	overflow-x: hidden;
 }
+.nav-item {
+	a{
+		transition:transform 0.5s
+	}
+	&:hover{
+		a{
+			transform:scale(1.5);
+		}
+		
+				
+	}
+}
 /*estilos pagina inicio */
 
 .inicio{
@@ -33,12 +45,13 @@ body{
 		font-size: 1rem;
 		}	
 	}
-	
 	.logo{
 		z-index: 5;
+		img{
+			width: 60%;
+			
+		}
 	}
-
-
 }
 
 .contenido{

@@ -10,6 +10,14 @@ body {
   overflow-x: hidden;
 }
 
+.nav-item a {
+  transition: transform 0.5s;
+}
+
+.nav-item:hover a {
+  transform: scale(1.5);
+}
+
 /*estilos pagina inicio */
 .inicio {
   height: 100vh;
@@ -28,6 +36,10 @@ body {
 
 .inicio .logo {
   z-index: 5;
+}
+
+.inicio .logo img {
+  width: 60%;
 }
 
 .contenido {
