@@ -1,6 +1,6 @@
 @import "fuentes";
 @import "variables";
-@mixin positionimput ($top:auto,$bottom:auto,$left:auto,$right:auto,$width:auto,$height:auto) {
+@mixin positionimput ($top:auto,$bottom:auto,$left:auto,$right:auto,$width:auto,$height:auto,$hideBg:true) {
 	position: absolute;
 	top: $top;
 	bottom:	$bottom;
@@ -8,7 +8,9 @@
     right: $right;
    	width: $width;
    	height: $height;
-   	background: none;
+   	@if $hideBg {
+   		background: none;
+   	}
 	border: none;
 }
 
@@ -27,7 +29,7 @@ body{
 	}
 	&:hover{
 		a{
-			transform:scale(1.5);
+			transform:scale(1.3);
 		}
 		
 				
@@ -54,6 +56,25 @@ body{
 	}
 }
 
+.footer{
+	
+	.Insta__Logo{
+		width:60px;
+		height: auto; 
+	}
+	.Face__Logo{
+		width:60px;
+		height: auto;
+	}
+	.Twitter__logo{
+		width:60px;
+		height: auto;
+	
+	}
+	
+	
+}
+
 .contenido{
 	background: darkred;
 	border-color: black ;
@@ -67,13 +88,11 @@ body{
 }
 
 
-.referencias{
-	@media all and (max-width: 768px){
-		flex-direction: column;
-	}
+.carousel-item{
 	iframe{
+		width: 70%;	
 		@media all and (max-width: 768px){
-			height: 50%;
+			height: auto;
 		}
 	}
 }
@@ -96,17 +115,55 @@ body{
 	height: 70vw;
 	position: relative;
 	img{
-		height: 100%;
+		width: 100%;
+		height: auto;
 	}
 	@each $input,$param in $inputshpj{
 		##{$input}{
-			@include positionimput(map-get($param,top),map-get($param,bottom),map-get($param,left),map-get($param,right),map-get($param,width),map-get($param,height));
+				$actHideBg: if(map-get($param,hideBg)!=false, true, false);
+			@include positionimput(map-get($param,top),map-get($param,bottom),map-get($param,left),map-get($param,right),map-get($param,width),map-get($param,height),$actHideBg);
 		}
 		
 	}
 	
 }
+.herrero{
+	width: 50%;
+	height: auto;
+}
+
+.form{
+	background-color:rgb(55, 54, 54);
+	
+	.gif__contacto{
+		width:40%;
+		height: auto;
+
+	}
+}
+
 
 .send{
 	width: 20%;
+	input{
+		transition:transform 0.5s;
+	}
+	&:hover{
+		input{
+			transform:scale(1.3);
+		}		
+	}
+}
+
+.border{
+	border-color: black !important;
+}
+.Zeth__logo{
+	width: 15%;
+	height: auto;
+	@media all and (max-width: 768px){
+		width: 30%;
+	}
+	
+
 }

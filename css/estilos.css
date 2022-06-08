@@ -15,7 +15,7 @@ body {
 }
 
 .nav-item:hover a {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 
 /*estilos pagina inicio */
@@ -42,6 +42,21 @@ body {
   width: 60%;
 }
 
+.footer .Insta__Logo {
+  width: 60px;
+  height: auto;
+}
+
+.footer .Face__Logo {
+  width: 60px;
+  height: auto;
+}
+
+.footer .Twitter__logo {
+  width: 60px;
+  height: auto;
+}
+
 .contenido {
   background: darkred;
   border-color: black;
@@ -52,15 +67,13 @@ body {
   border-color: black !important;
 }
 
-@media all and (max-width: 768px) {
-  .referencias {
-    flex-direction: column;
-  }
+.carousel-item iframe {
+  width: 70%;
 }
 
 @media all and (max-width: 768px) {
-  .referencias iframe {
-    height: 50%;
+  .carousel-item iframe {
+    height: auto;
   }
 }
 
@@ -88,7 +101,8 @@ body {
 }
 
 .hoja__de__pj img {
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .hoja__de__pj #NombreDePersonaje {
@@ -843,7 +857,6 @@ body {
   right: auto;
   width: 4%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -855,7 +868,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -867,7 +879,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -879,7 +890,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -891,7 +901,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -903,7 +912,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -915,7 +923,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -927,7 +934,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -939,7 +945,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -951,7 +956,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -963,7 +967,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -975,7 +978,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -987,7 +989,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -999,7 +1000,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -1011,7 +1011,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -1023,7 +1022,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -1035,7 +1033,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -1047,7 +1044,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -1059,7 +1055,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -1071,7 +1066,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -1083,7 +1077,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -1095,7 +1088,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -1107,7 +1099,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -1119,7 +1110,6 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
@@ -1131,79 +1121,72 @@ body {
   right: auto;
   width: 3%;
   height: 2%;
-  background: none;
   border: none;
 }
 
 .hoja__de__pj #Exitos1 {
   position: absolute;
-  top: 4.9%;
+  top: 39.6%;
   bottom: auto;
-  left: 47%;
+  left: 60.2%;
   right: auto;
-  width: 13%;
-  height: 2.7%;
-  background: none;
+  width: 3%;
+  height: 2%;
   border: none;
 }
 
 .hoja__de__pj #Exitos2 {
   position: absolute;
-  top: 4.9%;
+  top: 39.6%;
   bottom: auto;
-  left: 47%;
+  left: 62.5%;
   right: auto;
-  width: 13%;
-  height: 2.7%;
-  background: none;
+  width: 3%;
+  height: 2%;
   border: none;
 }
 
 .hoja__de__pj #Exitos3 {
   position: absolute;
-  top: 4.9%;
+  top: 39.6%;
   bottom: auto;
-  left: 47%;
+  left: 64.8%;
   right: auto;
-  width: 13%;
-  height: 2.7%;
-  background: none;
+  width: 3%;
+  height: 2%;
   border: none;
 }
 
 .hoja__de__pj #Fallos1 {
   position: absolute;
-  top: 4.9%;
+  top: 41.6%;
   bottom: auto;
-  left: 47%;
+  left: 60.2%;
   right: auto;
-  width: 13%;
-  height: 2.7%;
-  background: none;
+  width: 3%;
+  height: 2%;
   border: none;
 }
 
 .hoja__de__pj #Fallos2 {
   position: absolute;
-  top: 4.9%;
+  top: 41.6%;
   bottom: auto;
-  left: 47%;
+  left: 62.5%;
   right: auto;
-  width: 13%;
-  height: 2.7%;
-  background: none;
+  width: 3%;
+  height: 2%;
   border: none;
 }
 
 .hoja__de__pj #Fallos3 {
   position: absolute;
-  top: 4.9%;
+  top: 41.6%;
   bottom: auto;
-  left: 47%;
+  left: 64.8%;
   right: auto;
-  width: 13%;
-  height: 2.7%;
-  background: none;
+  width: 3%;
+  height: 2%;
   border: none;
 }
 
@@ -1221,11 +1204,11 @@ body {
 
 .hoja__de__pj #Trafondo {
   position: absolute;
-  top: 4.9%;
+  top: 8.4%;
   bottom: auto;
-  left: 47%;
+  left: 66%;
   right: auto;
-  width: 13%;
+  width: 22%;
   height: 2.7%;
   background: none;
   border: none;
@@ -1235,9 +1218,9 @@ body {
   position: absolute;
   top: 4.9%;
   bottom: auto;
-  left: 47%;
+  left: 66%;
   right: auto;
-  width: 13%;
+  width: 22%;
   height: 2.7%;
   background: none;
   border: none;
@@ -1245,11 +1228,11 @@ body {
 
 .hoja__de__pj #Razas {
   position: absolute;
-  top: 4.9%;
+  top: 8.4%;
   bottom: auto;
   left: 47%;
   right: auto;
-  width: 13%;
+  width: 22%;
   height: 2.7%;
   background: none;
   border: none;
@@ -1257,100 +1240,137 @@ body {
 
 .hoja__de__pj #RasgosDePersonalidad {
   position: absolute;
-  top: 4.9%;
+  top: 16.5%;
   bottom: auto;
-  left: 47%;
+  left: 72%;
   right: auto;
-  width: 13%;
-  height: 2.7%;
+  width: 31%;
+  height: 6.8%;
   background: none;
   border: none;
 }
 
 .hoja__de__pj #Ideales {
   position: absolute;
-  top: 4.9%;
+  top: 25.2%;
   bottom: auto;
-  left: 47%;
+  left: 72%;
   right: auto;
-  width: 13%;
-  height: 2.7%;
+  width: 31%;
+  height: 5.7%;
   background: none;
   border: none;
 }
 
 .hoja__de__pj #Vinculos {
   position: absolute;
-  top: 4.9%;
+  top: 32.4%;
   bottom: auto;
-  left: 47%;
+  left: 72%;
   right: auto;
-  width: 13%;
-  height: 2.7%;
+  width: 31%;
+  height: 5.7%;
   background: none;
   border: none;
 }
 
 .hoja__de__pj #Defectos {
   position: absolute;
-  top: 4.9%;
+  top: 39.6%;
   bottom: auto;
-  left: 47%;
+  left: 72%;
   right: auto;
-  width: 13%;
-  height: 2.7%;
-  background: none;
-  border: none;
-}
-
-.hoja__de__pj #AtaquesYConjuros {
-  position: absolute;
-  top: 4.9%;
-  bottom: auto;
-  left: 47%;
-  right: auto;
-  width: 13%;
-  height: 2.7%;
+  width: 31%;
+  height: 5.7%;
   background: none;
   border: none;
 }
 
 .hoja__de__pj #Equipo {
   position: absolute;
-  top: 4.9%;
+  top: 74.2%;
   bottom: auto;
-  left: 47%;
+  left: 46%;
   right: auto;
-  width: 13%;
-  height: 2.7%;
+  width: 24%;
+  height: 21.7%;
   background: none;
   border: none;
 }
 
 .hoja__de__pj #CompetenciasEIdiomas {
   position: absolute;
-  top: 4.9%;
+  top: 78.4%;
   bottom: auto;
-  left: 47%;
+  left: 3.5%;
   right: auto;
-  width: 13%;
-  height: 2.7%;
+  width: 33%;
+  height: 17.7%;
   background: none;
   border: none;
 }
 
 .hoja__de__pj #RasgosyAtributos {
   position: absolute;
-  top: 4.9%;
+  top: 47.8%;
   bottom: auto;
-  left: 47%;
+  left: 71%;
   right: auto;
-  width: 13%;
-  height: 2.7%;
+  width: 33%;
+  height: 48.7%;
   background: none;
   border: none;
 }
 
+.hoja__de__pj #AtaquesyConjuros {
+  position: absolute;
+  top: 56.8%;
+  bottom: auto;
+  left: 37.5%;
+  right: auto;
+  width: 33%;
+  height: 15.7%;
+  background: none;
+  border: none;
+}
+
+.herrero {
+  width: 50%;
+  height: auto;
+}
+
+.form {
+  background-color: #373636;
+}
+
+.form .gif__contacto {
+  width: 40%;
+  height: auto;
+}
+
 .send {
   width: 20%;
+}
+
+.send input {
+  transition: transform 0.5s;
+}
+
+.send:hover input {
+  transform: scale(1.3);
+}
+
+.border {
+  border-color: black !important;
+}
+
+.Zeth__logo {
+  width: 15%;
+  height: auto;
+}
+
+@media all and (max-width: 768px) {
+  .Zeth__logo {
+    width: 30%;
+  }
 }
