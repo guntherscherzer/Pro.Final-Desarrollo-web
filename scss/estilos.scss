@@ -1,6 +1,9 @@
 @import "fuentes";
 @import "variables";
-@mixin positionimput ($top:auto,$bottom:auto,$left:auto,$right:auto,$width:auto,$height:auto,$hideBg:true) {
+@mixin positionimput ($top:auto,$bottom:auto,$left:auto,$right:auto,$width:auto,$height:auto,$hideBg:true,$font-s:1rem) {
+	@if $font-s == null{
+  		$font-s: 1rem;
+  	}
 	position: absolute;
 	top: $top;
 	bottom:	$bottom;
@@ -8,6 +11,10 @@
     right: $right;
    	width: $width;
    	height: $height;
+   	font-size: $font-s;
+  	@media all and (max-width: 910px){
+		font-size:$font-s*0.5;
+	}	
    	@if $hideBg {
    		background: none;
    	}
@@ -39,8 +46,7 @@ body{
 
 .inicio{
  
-	height: 100vh;
-	z-index: -5;
+	height: 90vh;
 	.titulo__intro{
 		z-index: 5;
 		@media all and (max-width: 768px){
@@ -50,29 +56,40 @@ body{
 	.logo{
 		z-index: 5;
 		img{
-			width: 60%;
-			
+			width: 100%;
+		}
+	}
+	.ImgInicio{
+		width: 100%;
+		height: auto;
+		@media all and (max-width: 1094px){
+			width: auto;
+			height: 100%;
 		}
 	}
 }
 
+
 .footer{
-	
-	.Insta__Logo{
+	.footer__titulo{
+		font-size: 1.5rem;
+	}
+	%tamanio_redes{
 		width:60px;
 		height: auto; 
+		@media all and (max-width: 768px){
+			width: 40px;
+		}
+	}
+	.Insta__Logo{
+		@extend %tamanio_redes;
 	}
 	.Face__Logo{
-		width:60px;
-		height: auto;
+		@extend %tamanio_redes;
 	}
 	.Twitter__logo{
-		width:60px;
-		height: auto;
-	
+		@extend %tamanio_redes;
 	}
-	
-	
 }
 
 .contenido{
@@ -112,16 +129,16 @@ body{
 }
 
 .hoja__de__pj {
-	height: 70vw;
 	position: relative;
 	img{
 		width: 100%;
 		height: auto;
 	}
+
 	@each $input,$param in $inputshpj{
 		##{$input}{
 				$actHideBg: if(map-get($param,hideBg)!=false, true, false);
-			@include positionimput(map-get($param,top),map-get($param,bottom),map-get($param,left),map-get($param,right),map-get($param,width),map-get($param,height),$actHideBg);
+			@include positionimput(map-get($param,top),map-get($param,bottom),map-get($param,left),map-get($param,right),map-get($param,width),map-get($param,height),$actHideBg,map-get($param,font-s));
 		}
 		
 	}

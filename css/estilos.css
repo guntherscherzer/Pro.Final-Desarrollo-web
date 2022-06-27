@@ -20,8 +20,7 @@ body {
 
 /*estilos pagina inicio */
 .inicio {
-  height: 100vh;
-  z-index: -5;
+  height: 90vh;
 }
 
 .inicio .titulo__intro {
@@ -39,22 +38,34 @@ body {
 }
 
 .inicio .logo img {
-  width: 60%;
+  width: 100%;
 }
 
-.footer .Insta__Logo {
+.inicio .ImgInicio {
+  width: 100%;
+  height: auto;
+}
+
+@media all and (max-width: 1094px) {
+  .inicio .ImgInicio {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.footer .footer__titulo {
+  font-size: 1.5rem;
+}
+
+.footer .Insta__Logo, .footer .Face__Logo, .footer .Twitter__logo {
   width: 60px;
   height: auto;
 }
 
-.footer .Face__Logo {
-  width: 60px;
-  height: auto;
-}
-
-.footer .Twitter__logo {
-  width: 60px;
-  height: auto;
+@media all and (max-width: 768px) {
+  .footer .Insta__Logo, .footer .Face__Logo, .footer .Twitter__logo {
+    width: 40px;
+  }
 }
 
 .contenido {
@@ -96,7 +107,6 @@ body {
 }
 
 .hoja__de__pj {
-  height: 70vw;
   position: relative;
 }
 
@@ -107,86 +117,135 @@ body {
 
 .hoja__de__pj #NombreDePersonaje {
   position: absolute;
-  top: 6.6%;
+  top: 6.8%;
   bottom: auto;
-  left: 7%;
+  left: 6%;
   right: auto;
-  width: 39%;
-  height: auto;
+  width: 37%;
+  height: 3.5%;
+  font-size: 1.5rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #NombreDePersonaje {
+    font-size: 0.75rem;
+  }
 }
 
 .hoja__de__pj #NombreDeJugador {
   position: absolute;
-  top: 4.9%;
+  top: 5.5%;
   bottom: auto;
-  left: 84%;
+  left: 78%;
   right: auto;
   width: 18%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #NombreDeJugador {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Experiencia {
   position: absolute;
-  top: 8.4%;
+  top: 8.8%;
   bottom: auto;
-  left: 84%;
+  left: 78%;
   right: auto;
   width: 18%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
 }
 
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Experiencia {
+    font-size: 0.5rem;
+  }
+}
+
 .hoja__de__pj #FuerzaPuntaje {
   position: absolute;
-  top: 22.5%;
+  top: 22.7%;
   bottom: auto;
   left: 6%;
   right: auto;
   width: 7%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
 }
 
+@media all and (max-width: 910px) {
+  .hoja__de__pj #FuerzaPuntaje {
+    font-size: 0.5rem;
+  }
+}
+
 .hoja__de__pj #FuerzaModificador {
   position: absolute;
-  top: 18.2%;
+  top: 18.5%;
   bottom: auto;
   left: 5%;
   right: auto;
   width: 9%;
   height: 5%;
+  font-size: 1.5rem;
   background: none;
   border: none;
 }
 
+@media all and (max-width: 910px) {
+  .hoja__de__pj #FuerzaModificador {
+    font-size: 0.75rem;
+  }
+}
+
 .hoja__de__pj #DestrezaPuntaje {
   position: absolute;
-  top: 31.7%;
+  top: 31.8%;
   bottom: auto;
   left: 6%;
   right: auto;
   width: 7%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #DestrezaPuntaje {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #DestrezaModificador {
   position: absolute;
   top: 27.5%;
   bottom: auto;
-  left: 5%;
+  left: 5.8%;
   right: auto;
   width: 9%;
   height: 5%;
+  font-size: 1.5rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #DestrezaModificador {
+    font-size: 0.75rem;
+  }
 }
 
 .hoja__de__pj #ConstPuntaje {
@@ -197,20 +256,34 @@ body {
   right: auto;
   width: 7%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
 }
 
+@media all and (max-width: 910px) {
+  .hoja__de__pj #ConstPuntaje {
+    font-size: 0.5rem;
+  }
+}
+
 .hoja__de__pj #ConstModificador {
   position: absolute;
-  top: 36.8%;
+  top: 36.7%;
   bottom: auto;
-  left: 5%;
+  left: 5.8%;
   right: auto;
   width: 9%;
   height: 5%;
+  font-size: 1.5rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #ConstModificador {
+    font-size: 0.75rem;
+  }
 }
 
 .hoja__de__pj #IntelPuntaje {
@@ -221,1081 +294,1732 @@ body {
   right: auto;
   width: 7%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #IntelPuntaje {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #IntelModificador {
   position: absolute;
-  top: 46.1%;
+  top: 45.8%;
   bottom: auto;
-  left: 5%;
+  left: 5.8%;
   right: auto;
   width: 9%;
   height: 5%;
+  font-size: 1.5rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #IntelModificador {
+    font-size: 0.75rem;
+  }
 }
 
 .hoja__de__pj #SabiduriaPuntaje {
   position: absolute;
-  top: 59.3%;
+  top: 59.2%;
   bottom: auto;
   left: 6%;
   right: auto;
   width: 7%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #SabiduriaPuntaje {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #SabiduriaModificador {
   position: absolute;
-  top: 55.4%;
+  top: 54.9%;
   bottom: auto;
-  left: 5%;
+  left: 5.8%;
   right: auto;
   width: 9%;
   height: 5%;
+  font-size: 1.5rem;
   background: none;
   border: none;
 }
 
+@media all and (max-width: 910px) {
+  .hoja__de__pj #SabiduriaModificador {
+    font-size: 0.75rem;
+  }
+}
+
 .hoja__de__pj #CarismaPuntaje {
   position: absolute;
-  top: 68.5%;
+  top: 68.3%;
   bottom: auto;
   left: 6%;
   right: auto;
   width: 7%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CarismaPuntaje {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CarismaModificador {
   position: absolute;
-  top: 64.7%;
+  top: 64%;
   bottom: auto;
-  left: 5%;
+  left: 5.8%;
   right: auto;
   width: 9%;
   height: 5%;
+  font-size: 1.5rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CarismaModificador {
+    font-size: 0.75rem;
+  }
 }
 
 .hoja__de__pj #SabiduriaPasiva {
   position: absolute;
-  top: 74.3%;
+  top: 74.4%;
   bottom: auto;
-  left: 4%;
+  left: 3.9%;
   right: auto;
   width: 6%;
   height: 2.7%;
+  font-size: 0.8rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #SabiduriaPasiva {
+    font-size: 0.4rem;
+  }
 }
 
 .hoja__de__pj #BonifDeCompetencia {
   position: absolute;
-  top: 20.1%;
+  top: 20.2%;
   bottom: auto;
-  left: 15.3%;
+  left: 14.7%;
   right: auto;
   width: 7%;
   height: 3.5%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #BonifDeCompetencia {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #FuerzaSalvacion {
   position: absolute;
-  top: 24.5%;
+  top: 24.7%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
 }
 
+@media all and (max-width: 910px) {
+  .hoja__de__pj #FuerzaSalvacion {
+    font-size: 0.5rem;
+  }
+}
+
 .hoja__de__pj #DestrezaSalvacion {
   position: absolute;
-  top: 26.3%;
+  top: 26.4%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #DestrezaSalvacion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #ConstSalvacion {
   position: absolute;
   top: 28.1%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #ConstSalvacion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #IntelSalvacion {
   position: absolute;
-  top: 29.9%;
+  top: 29.8%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #IntelSalvacion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #SabiduriaSalvacion {
   position: absolute;
-  top: 31.7%;
+  top: 31.5%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #SabiduriaSalvacion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CarismaSalvacion {
   position: absolute;
-  top: 33.5%;
+  top: 33.2%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CarismaSalvacion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Acrobacias {
   position: absolute;
-  top: 39.2%;
+  top: 39.3%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Acrobacias {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Arcano {
   position: absolute;
-  top: 40.9%;
+  top: 41%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Arcano {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Atletismo {
   position: absolute;
-  top: 42.6%;
+  top: 42.8%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Atletismo {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Engaño {
   position: absolute;
-  top: 44.3%;
+  top: 44.6%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Engaño {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Historia {
   position: absolute;
-  top: 46%;
+  top: 46.3%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Historia {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Interpretacion {
   position: absolute;
-  top: 47.7%;
+  top: 48%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Interpretacion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Intimidacion {
   position: absolute;
-  top: 49.4%;
+  top: 49.7%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Intimidacion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Investigacion {
   position: absolute;
-  top: 51.1%;
+  top: 51.4%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Investigacion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #JuegoDeManos {
   position: absolute;
-  top: 52.8%;
+  top: 53.1%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #JuegoDeManos {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Medicina {
   position: absolute;
-  top: 54.5%;
+  top: 54.9%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Medicina {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Naturaleza {
   position: absolute;
-  top: 56.2%;
+  top: 56.6%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Naturaleza {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Persepcion {
   position: absolute;
-  top: 57.9%;
+  top: 58.3%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Persepcion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Perspicacia {
   position: absolute;
-  top: 59.6%;
+  top: 60.1%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Perspicacia {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Persuacion {
   position: absolute;
-  top: 61.3%;
+  top: 61.8%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Persuacion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Religion {
   position: absolute;
-  top: 63%;
+  top: 63.5%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Religion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Sigilo {
   position: absolute;
-  top: 64.7%;
+  top: 65.3%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Sigilo {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Supervivencia {
   position: absolute;
-  top: 66.4%;
+  top: 66.9%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Supervivencia {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #TratoConAnimales {
   position: absolute;
-  top: 68.1%;
+  top: 68.6%;
   bottom: auto;
-  left: 18.6%;
+  left: 16.8%;
   right: auto;
   width: 5.9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #TratoConAnimales {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #ClaseDeArmadura {
   position: absolute;
-  top: 17%;
+  top: 17.2%;
   bottom: auto;
-  left: 39.4%;
+  left: 37.8%;
   right: auto;
-  width: 9%;
-  height: 3.7%;
+  width: 7%;
+  height: 3.5%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #ClaseDeArmadura {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Iniciativa {
   position: absolute;
-  top: 16.9%;
+  top: 17.2%;
   bottom: auto;
-  left: 48.9%;
+  left: 47.1%;
   right: auto;
-  width: 10%;
+  width: 7%;
   height: 4.7%;
+  font-size: 1.5rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Iniciativa {
+    font-size: 0.75rem;
+  }
 }
 
 .hoja__de__pj #Velocidad {
   position: absolute;
-  top: 16.9%;
+  top: 17.2%;
   bottom: auto;
-  left: 59.5%;
+  left: 57%;
   right: auto;
-  width: 10%;
+  width: 7%;
   height: 4.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Velocidad {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #PuntGolpeMaximo {
   position: absolute;
-  top: 23.6%;
+  top: 23.8%;
   bottom: auto;
-  left: 54%;
+  left: 53%;
   right: auto;
-  width: 13%;
+  width: 9%;
   height: 2.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #PuntGolpeMaximo {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #PuntGolpeActual {
   position: absolute;
-  top: 25.4%;
+  top: 25.5%;
   bottom: auto;
-  left: 47%;
+  left: 48%;
   right: auto;
-  width: 13%;
+  width: 9%;
   height: 5.7%;
+  font-size: 1rem;
   background: none;
   border: none;
 }
 
+@media all and (max-width: 910px) {
+  .hoja__de__pj #PuntGolpeActual {
+    font-size: 0.5rem;
+  }
+}
+
 .hoja__de__pj #TotalDadoDeGolpe {
   position: absolute;
-  top: 39.1%;
+  top: 39.3%;
   bottom: auto;
-  left: 42.5%;
+  left: 39.2%;
   right: auto;
   width: 11%;
   height: 2.6%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #TotalDadoDeGolpe {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #DadoDeGolpeActual {
   position: absolute;
   top: 40.9%;
   bottom: auto;
-  left: 42.5%;
+  left: 39.5%;
   right: auto;
   width: 9%;
   height: 3.7%;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #DadoDeGolpeActual {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #NombreAtaque1 {
   position: absolute;
-  top: 48.9%;
+  top: 49.2%;
   bottom: auto;
-  left: 39%;
+  left: 35.2%;
   right: auto;
   width: 13%;
   height: 2.7%;
+  font-size: 0.8rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #NombreAtaque1 {
+    font-size: 0.4rem;
+  }
 }
 
 .hoja__de__pj #NombreAtaque2 {
   position: absolute;
-  top: 51.6%;
+  top: 51.9%;
   bottom: auto;
-  left: 39%;
+  left: 35.2%;
   right: auto;
   width: 13%;
   height: 2.7%;
+  font-size: 0.8rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #NombreAtaque2 {
+    font-size: 0.4rem;
+  }
 }
 
 .hoja__de__pj #NombreAtaque3 {
   position: absolute;
-  top: 54.3%;
+  top: 54.5%;
   bottom: auto;
-  left: 39%;
+  left: 35.2%;
   right: auto;
   width: 13%;
   height: 2.7%;
+  font-size: 0.8rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #NombreAtaque3 {
+    font-size: 0.4rem;
+  }
 }
 
 .hoja__de__pj #BonifDeAtaque1 {
   position: absolute;
-  top: 48.9%;
+  top: 49.3%;
   bottom: auto;
-  left: 50.7%;
+  left: 46.7%;
   right: auto;
   width: 8%;
   height: 2.7%;
+  font-size: 0.8rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #BonifDeAtaque1 {
+    font-size: 0.4rem;
+  }
 }
 
 .hoja__de__pj #BonifDeAtaque2 {
   position: absolute;
-  top: 51.6%;
+  top: 51.9%;
   bottom: auto;
-  left: 50.7%;
+  left: 46.7%;
   right: auto;
   width: 8%;
   height: 2.7%;
+  font-size: 0.8rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #BonifDeAtaque2 {
+    font-size: 0.4rem;
+  }
 }
 
 .hoja__de__pj #BonifDeAtaque3 {
   position: absolute;
-  top: 54.3%;
+  top: 54.5%;
   bottom: auto;
-  left: 50.7%;
+  left: 46.7%;
   right: auto;
   width: 8%;
   height: 2.7%;
+  font-size: 0.8rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #BonifDeAtaque3 {
+    font-size: 0.4rem;
+  }
 }
 
 .hoja__de__pj #TipoDaño1 {
   position: absolute;
-  top: 48.9%;
+  top: 49.3%;
   bottom: auto;
-  left: 57.2%;
+  left: 52.6%;
   right: auto;
   width: 13%;
   height: 2.7%;
+  font-size: 0.8rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #TipoDaño1 {
+    font-size: 0.4rem;
+  }
 }
 
 .hoja__de__pj #TipoDaño2 {
   position: absolute;
-  top: 51.6%;
+  top: 51.9%;
   bottom: auto;
-  left: 57.2%;
+  left: 52.6%;
   right: auto;
   width: 13%;
   height: 2.7%;
+  font-size: 0.8rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #TipoDaño2 {
+    font-size: 0.4rem;
+  }
 }
 
 .hoja__de__pj #TipoDaño3 {
   position: absolute;
-  top: 54.3%;
+  top: 54.5%;
   bottom: auto;
-  left: 57.2%;
+  left: 52.6%;
   right: auto;
   width: 13%;
   height: 2.7%;
+  font-size: 0.8rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #TipoDaño3 {
+    font-size: 0.4rem;
+  }
 }
 
 .hoja__de__pj #MonedaCobre {
   position: absolute;
-  top: 75.3%;
+  top: 75.4%;
   bottom: auto;
-  left: 40%;
+  left: 36.5%;
   right: auto;
   width: 7%;
   height: 3%;
+  font-size: 0.7rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #MonedaCobre {
+    font-size: 0.35rem;
+  }
 }
 
 .hoja__de__pj #MonedaPlata {
   position: absolute;
-  top: 78.6%;
+  top: 78.7%;
   bottom: auto;
-  left: 40%;
+  left: 36.5%;
   right: auto;
   width: 7%;
   height: 3%;
+  font-size: 0.7rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #MonedaPlata {
+    font-size: 0.35rem;
+  }
 }
 
 .hoja__de__pj #MonedaElectro {
   position: absolute;
-  top: 81.9%;
+  top: 82%;
   bottom: auto;
-  left: 40%;
+  left: 36.5%;
   right: auto;
   width: 7%;
   height: 3%;
+  font-size: 0.7rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #MonedaElectro {
+    font-size: 0.35rem;
+  }
 }
 
 .hoja__de__pj #MonedaOro {
   position: absolute;
-  top: 85.2%;
+  top: 85.3%;
   bottom: auto;
-  left: 40%;
+  left: 36.5%;
   right: auto;
   width: 7%;
   height: 3%;
+  font-size: 0.7rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #MonedaOro {
+    font-size: 0.35rem;
+  }
 }
 
 .hoja__de__pj #MonedaPlatino {
   position: absolute;
-  top: 88.5%;
+  top: 88.6%;
   bottom: auto;
-  left: 40%;
+  left: 36.5%;
   right: auto;
   width: 7%;
   height: 3%;
+  font-size: 0.7rem;
   background: none;
   border: none;
 }
 
+@media all and (max-width: 910px) {
+  .hoja__de__pj #MonedaPlatino {
+    font-size: 0.35rem;
+  }
+}
+
 .hoja__de__pj #CheckInspiracion {
   position: absolute;
-  top: 15.8%;
+  top: 15.7%;
   bottom: auto;
-  left: 16.5%;
+  left: 15.2%;
   right: auto;
   width: 4%;
   height: 2%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckInspiracion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckFuerza {
   position: absolute;
-  top: 24.8%;
+  top: 24.9%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckFuerza {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckDestreza {
   position: absolute;
   top: 26.6%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckDestreza {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckConst {
   position: absolute;
-  top: 28.4%;
+  top: 28.3%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckConst {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckIntel {
   position: absolute;
-  top: 30.2%;
+  top: 30%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckIntel {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckSabiduria {
   position: absolute;
-  top: 31.9%;
+  top: 31.7%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckSabiduria {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckCarisma {
   position: absolute;
-  top: 33.7%;
+  top: 33.4%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckCarisma {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckAcrobacia {
   position: absolute;
-  top: 39.6%;
+  top: 39.5%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckAcrobacia {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckArcano {
   position: absolute;
-  top: 41.4%;
+  top: 41.2%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckArcano {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckAtletismo {
   position: absolute;
-  top: 43.2%;
+  top: 43%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckAtletismo {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckEngaño {
   position: absolute;
-  top: 45%;
+  top: 44.7%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckEngaño {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckHistoria {
   position: absolute;
-  top: 46.8%;
+  top: 46.4%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckHistoria {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckInterpretacion {
   position: absolute;
-  top: 48.6%;
+  top: 48.1%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckInterpretacion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckIntimidacion {
   position: absolute;
-  top: 50.4%;
+  top: 49.9%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckIntimidacion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Checkinvestigacion {
   position: absolute;
-  top: 52.2%;
+  top: 51.6%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Checkinvestigacion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckJuegoDeMano {
   position: absolute;
-  top: 54%;
+  top: 53.3%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckJuegoDeMano {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckMedicina {
   position: absolute;
-  top: 55.8%;
+  top: 55%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckMedicina {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckNaturaleza {
   position: absolute;
-  top: 57.6%;
+  top: 56.8%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckNaturaleza {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckPercepcion {
   position: absolute;
-  top: 59.4%;
+  top: 58.5%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckPercepcion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckPerspicacia {
   position: absolute;
-  top: 61.2%;
+  top: 60.2%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckPerspicacia {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckPersuacion {
   position: absolute;
-  top: 63%;
+  top: 62%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckPersuacion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckReligion {
   position: absolute;
-  top: 64.8%;
+  top: 63.7%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckReligion {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckSigilo {
   position: absolute;
-  top: 66.6%;
+  top: 65.4%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckSigilo {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckSupervivencia {
   position: absolute;
-  top: 68.4%;
+  top: 67.1%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckSupervivencia {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #CheckTratoConAnimales {
   position: absolute;
-  top: 70.2%;
+  top: 68.9%;
   bottom: auto;
-  left: 16.6%;
+  left: 15.7%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CheckTratoConAnimales {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Exitos1 {
   position: absolute;
-  top: 39.6%;
+  top: 39.8%;
   bottom: auto;
-  left: 60.2%;
+  left: 57%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Exitos1 {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Exitos2 {
   position: absolute;
-  top: 39.6%;
+  top: 39.8%;
   bottom: auto;
-  left: 62.5%;
+  left: 59.1%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Exitos2 {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Exitos3 {
   position: absolute;
-  top: 39.6%;
+  top: 39.8%;
   bottom: auto;
-  left: 64.8%;
+  left: 61.2%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Exitos3 {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Fallos1 {
   position: absolute;
-  top: 41.6%;
+  top: 41.7%;
   bottom: auto;
-  left: 60.2%;
+  left: 57%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Fallos1 {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Fallos2 {
   position: absolute;
-  top: 41.6%;
+  top: 41.7%;
   bottom: auto;
-  left: 62.5%;
+  left: 59.1%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Fallos2 {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Fallos3 {
   position: absolute;
-  top: 41.6%;
+  top: 41.7%;
   bottom: auto;
-  left: 64.8%;
+  left: 61.2%;
   right: auto;
-  width: 3%;
-  height: 2%;
+  width: 2%;
+  height: 1.5%;
+  font-size: 1rem;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Fallos3 {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Clase {
   position: absolute;
-  top: 4.9%;
+  top: 5.1%;
   bottom: auto;
-  left: 47%;
+  left: 43%;
   right: auto;
   width: 13%;
-  height: 2.7%;
+  height: auto;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Clase {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Trafondo {
   position: absolute;
-  top: 8.4%;
+  top: 5.1%;
   bottom: auto;
-  left: 66%;
+  left: 62%;
   right: auto;
   width: 22%;
-  height: 2.7%;
+  height: auto;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Trafondo {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Alineamientos {
   position: absolute;
-  top: 4.9%;
+  top: 8.3%;
   bottom: auto;
-  left: 66%;
+  left: 62%;
   right: auto;
   width: 22%;
-  height: 2.7%;
+  height: auto;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Alineamientos {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #Razas {
   position: absolute;
-  top: 8.4%;
+  top: 8.3%;
   bottom: auto;
-  left: 47%;
+  left: 43%;
   right: auto;
   width: 22%;
-  height: 2.7%;
+  height: auto;
+  font-size: 1rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Razas {
+    font-size: 0.5rem;
+  }
 }
 
 .hoja__de__pj #RasgosDePersonalidad {
   position: absolute;
-  top: 16.5%;
+  top: 16.6%;
   bottom: auto;
-  left: 72%;
+  left: 67.8%;
   right: auto;
-  width: 31%;
+  width: 30.2%;
   height: 6.8%;
+  font-size: 0.7rem;
   background: none;
   border: none;
 }
 
+@media all and (max-width: 910px) {
+  .hoja__de__pj #RasgosDePersonalidad {
+    font-size: 0.35rem;
+  }
+}
+
 .hoja__de__pj #Ideales {
   position: absolute;
-  top: 25.2%;
+  top: 25.4%;
   bottom: auto;
-  left: 72%;
+  left: 67.8%;
   right: auto;
-  width: 31%;
+  width: 30.2%;
   height: 5.7%;
+  font-size: 0.7rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Ideales {
+    font-size: 0.35rem;
+  }
 }
 
 .hoja__de__pj #Vinculos {
   position: absolute;
   top: 32.4%;
   bottom: auto;
-  left: 72%;
+  left: 67.8%;
   right: auto;
-  width: 31%;
+  width: 30.2%;
   height: 5.7%;
+  font-size: 0.7rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Vinculos {
+    font-size: 0.35rem;
+  }
 }
 
 .hoja__de__pj #Defectos {
   position: absolute;
-  top: 39.6%;
+  top: 39.5%;
   bottom: auto;
-  left: 72%;
+  left: 67.8%;
   right: auto;
-  width: 31%;
+  width: 30.2%;
   height: 5.7%;
+  font-size: 0.7rem;
   background: none;
   border: none;
 }
 
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Defectos {
+    font-size: 0.35rem;
+  }
+}
+
 .hoja__de__pj #Equipo {
   position: absolute;
-  top: 74.2%;
+  top: 74.3%;
   bottom: auto;
-  left: 46%;
+  left: 42.5%;
   right: auto;
   width: 24%;
   height: 21.7%;
+  font-size: 0.7rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #Equipo {
+    font-size: 0.35rem;
+  }
 }
 
 .hoja__de__pj #CompetenciasEIdiomas {
@@ -1304,34 +2028,55 @@ body {
   bottom: auto;
   left: 3.5%;
   right: auto;
-  width: 33%;
+  width: 31.4%;
   height: 17.7%;
+  font-size: 0.7rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #CompetenciasEIdiomas {
+    font-size: 0.35rem;
+  }
 }
 
 .hoja__de__pj #RasgosyAtributos {
   position: absolute;
-  top: 47.8%;
+  top: 47.5%;
   bottom: auto;
-  left: 71%;
+  left: 66.8%;
   right: auto;
-  width: 33%;
+  width: 31.5%;
   height: 48.7%;
+  font-size: 0.7rem;
   background: none;
   border: none;
 }
 
+@media all and (max-width: 910px) {
+  .hoja__de__pj #RasgosyAtributos {
+    font-size: 0.35rem;
+  }
+}
+
 .hoja__de__pj #AtaquesyConjuros {
   position: absolute;
-  top: 56.8%;
+  top: 56.1%;
   bottom: auto;
-  left: 37.5%;
+  left: 34.5%;
   right: auto;
   width: 33%;
   height: 15.7%;
+  font-size: 0.7rem;
   background: none;
   border: none;
+}
+
+@media all and (max-width: 910px) {
+  .hoja__de__pj #AtaquesyConjuros {
+    font-size: 0.35rem;
+  }
 }
 
 .herrero {
